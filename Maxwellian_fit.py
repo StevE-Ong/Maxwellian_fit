@@ -1,6 +1,26 @@
 import numpy as np
 
 def Maxwellian_fit(Emin,Emax,counts,energy):
+    """
+    Parameter
+    ---------    
+    Emin : float
+        The minimum energy in MeV where the regression should begin with
+    
+    Emax : float
+        The maximum energy in MeV where the regression should end
+    
+    counts : 1D array float
+        The counts of histogram
+        
+    energy : 1D array float
+        The energy of histogram in MeV
+        
+    Returns
+    -------
+    The temperature of the Maxwellian fit in MeV
+    e.g 4.0 MeV
+    """
     # Performing LinearRegression
     from sklearn.model_selection import train_test_split
     binsize = energy[1]-energy[0]
