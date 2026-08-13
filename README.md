@@ -61,9 +61,3 @@ $ python maxwellian_gui.py [spectrum.dat]
 - **Save figure...** writes png, pdf, svg or eps at the chosen dpi; **Save report...** writes the fit numbers together with the settings that produced them.
 
 The matplotlib navigation toolbar under the plot gives pan, zoom and a quick save at screen resolution.
-
-## Publications
-
-The script is developed for the generation of plots in the following publications:
-
-- I Tazes, J F Ong, O Tesileanu, K A Tanaka, N A Papadogiannis, M Tatarakis and V Dimitriou, Target normal sheath acceleration and laser wakefield acceleration particle-in-cell simulations performance on CPU & GPU architectures for high-power laser systems, 2020 Plasma Phys. Control. Fusion 62 094005.
