@@ -10,8 +10,10 @@ type: software
 authors:
   - family-names: Ong
     given-names: Jian Fuh
-    # affiliation: "Extreme Light Infrastructure - Nuclear Physics (ELI-NP)"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Extreme Light Infrastructure - Nuclear Physics (ELI-NP)"
+    orcid: "https://orcid.org/0000-0003-4526-626X"
+version: 2.0.0
+date-released: "2026-08-13"
 repository-code: "https://github.com/StevE-Ong/Maxwellian_fit"
 license: GPL-3.0
 keywords:
