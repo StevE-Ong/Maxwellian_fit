@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Maxwellian_fit: automatic hot-electron temperature fitting of particle energy spectra"
+abstract: >-
+  Fits dN/dE = C exp(-E/T) to a particle energy spectrum and detects the
+  exponential (hot-tail) portion of the spectrum automatically, so the fit
+  range does not have to be chosen by hand. Includes a Tkinter GUI for
+  interactive fitting and figure preparation.
+type: software
+authors:
+  - family-names: Ong
+    given-names: Jian Fuh
+    # affiliation: "Extreme Light Infrastructure - Nuclear Physics (ELI-NP)"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/StevE-Ong/Maxwellian_fit"
+license: GPL-3.0
+keywords:
+  - laser-plasma interaction
+  - particle-in-cell
+  - hot electron temperature
+  - energy spectrum
+  - Maxwellian fit
