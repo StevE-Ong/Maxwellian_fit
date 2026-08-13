@@ -1,5 +1,7 @@
 # Maxwellian Fit
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21916258.svg)](https://doi.org/10.5281/zenodo.21916258)
+
 Find the temperature of a particle energy spectrum, `dN/dE = C exp(-E/T)`, by linear regression on the log of the counts.
 
 The `auto_maxwellian` detects that range from the data instead, so the same settings work across a whole time series of spectra, and `maxwellian_gui` wraps it in a window for interactive use.
@@ -18,7 +20,7 @@ The `auto_maxwellian` detects that range from the data instead, so the same sett
 
 ## Requirements
 
-NumPy and matplotlib. `Maxwellian_fit.py` additionally needs [scikit-learn](https://scikit-learn.org/stable/index.html) (see the [install instructions](https://scikit-learn.org/stable/install.html)); the automatic fitter does not. The GUI uses Tkinter, which ships with CPython (`sudo apt install python3-tk` if your distribution splits it out).
+NumPy and matplotlib. The GUI uses Tkinter, which ships with CPython (`sudo apt install python3-tk` if your distribution splits it out).
 
 For `LaTeX` font rendering of `matplotlib` figures, under `Ubuntu 20.04`:
 
@@ -32,7 +34,9 @@ $ sudo apt install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
 import numpy as np
 from auto_maxwellian import auto_maxwellian_fit
 
-counts, energy = np.loadtxt("histogram_1.dat", unpack=True, usecols=[0, 1]) result = auto_maxwellian_fit(energy, counts) print(result.summary())
+counts, energy = np.loadtxt("histogram_1.dat", unpack=True, usecols=[0, 1])
+result = auto_maxwellian_fit(energy, counts)
+print(result.summary())
 ```
 
 ```
@@ -61,3 +65,23 @@ $ python maxwellian_gui.py [spectrum.dat]
 - **Save figure...** writes png, pdf, svg or eps at the chosen dpi; **Save report...** writes the fit numbers together with the settings that produced them.
 
 The matplotlib navigation toolbar under the plot gives pan, zoom and a quick save at screen resolution.
+
+## Citation
+
+If this code contributed to your work, please cite the archived release:
+
+> Ong, J. F. (2026). *Maxwellian_fit: automatic hot-electron temperature fitting of particle energy spectra* (v2.0.0). Zenodo. https://doi.org/10.5281/zenodo.21916259
+
+```bibtex
+@software{ong_maxwellian_fit_2026,
+  author    = {Ong, Jian Fuh},
+  title     = {Maxwellian\_fit: automatic hot-electron temperature fitting of particle energy spectra},
+  version   = {v2.0.0},
+  publisher = {Zenodo},
+  year      = {2026},
+  doi       = {10.5281/zenodo.21916259},
+  url       = {https://doi.org/10.5281/zenodo.21916259}
+}
+```
+
+The DOI above pins v2.0.0. [10.5281/zenodo.21916258](https://doi.org/10.5281/zenodo.21916258) is the concept DOI, which always resolves to the newest release.
